@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Profile – PlaceHub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+<div class="shell">
+<nav class="side" id="nav"></nav>
+<main>
+<h1>Profile</h1>
+<p class="sub">Keep your details up to date.</p>
+<form id="f" class="card" style="max-width:460px" novalidate>
+<label>Full name</label><input type="text" name="name"><div class="err" data-for="name"></div><label>Email</label><input id="email" disabled>
+<label>Branch</label><select name="branch"><option value="">Select…</option><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>Mechanical</option></select><div class="err" data-for="branch"></div><label>CGPA</label><input step="0.01" type="number" name="cgpa"><div class="err" data-for="cgpa"></div><label>Skills (comma separated)</label><input type="text" name="skills"><div class="err" data-for="skills"></div>
+<button class="btn" style="margin-top:16px">Save changes</button><span id="ok" class="sub" style="margin-left:12px;color:var(--ok)"></span></form>
+</main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
